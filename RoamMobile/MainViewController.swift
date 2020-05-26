@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = .white
+    view.backgroundColor = UIColor(red: 0.09, green: 0.09, blue: 0.09, alpha: 1)
     
     setupWebView()
   }
@@ -36,16 +36,16 @@ class MainViewController: UIViewController {
       wkController.addUserScript(disableZoomScript)
     }
     
-//    if let customCSSScript = generateCustomCSS() {
-//      wkController.addUserScript(customCSSScript)
-//    }
+    if let customCSSScript = generateCustomCSS() {
+      wkController.addUserScript(customCSSScript)
+    }
     
     // need user agent in order to be able to sign in when using Google service
     config.applicationNameForUserAgent = "Version/8.0.2 Safari/600.2.5"
     config.userContentController = wkController
     
     webView = WKWebView(frame: .zero, configuration: config)
-    let url = URL(string: "https://roamresearch.com/#/")
+    let url = URL(string: "https://roamresearch.com/#/app")
     let urlRequest = URLRequest(url: url!, cachePolicy: .useProtocolCachePolicy)
     webView.load(urlRequest)
     
@@ -90,10 +90,10 @@ class MainViewController: UIViewController {
     let toolBar = UIToolbar()
     toolBar.frame = CGRect(x: 0, y: 0, width: screenWidth, height: height)
     toolBar.barStyle = .default
-    toolBar.tintColor = .systemBlue
-    toolBar.barTintColor = .systemBackground
+    toolBar.tintColor = UIColor(red: 0.345, green: 0.702, blue: 0.922, alpha: 1)
+    toolBar.barTintColor = UIColor(red: 0.02, green: 0.02, blue: 0.02, alpha: 1)
     
-    let preferredSymbolConfig = UIImage.SymbolConfiguration(weight: .bold)
+    let preferredSymbolConfig = UIImage.SymbolConfiguration(weight: .semibold)
     
     let increaseIndentButton = UIBarButtonItem(image: UIImage(systemName: "increase.indent", withConfiguration: preferredSymbolConfig), style: .plain, target: self, action: #selector(handleIncreaseIndent))
     let decreaseIndentButton = UIBarButtonItem(image: UIImage(systemName: "decrease.indent", withConfiguration: preferredSymbolConfig), style: .plain, target: self, action: #selector(handleDecreaseIndent))
@@ -159,7 +159,7 @@ class MainViewController: UIViewController {
   }
   
   @objc func handleRemoveMobileBar() {
-    let jsScript = "document.getElementById('rm-mobile-bar').style.display = 'none'"
+    let jsScript = "document.activeElement.blur()"
     webView.evaluateJavaScript(jsScript, completionHandler: nil)
   }
   

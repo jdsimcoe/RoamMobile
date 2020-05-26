@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,7 +23,7 @@
 		111F07B52407B4BF003B90A5 /* WKWebView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Ext.swift"; sourceTree = "<group>"; };
 		111F07B924080BEE003B90A5 /* betterroam.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = betterroam.css; sourceTree = "<group>"; };
 		111F07BB240812E7003B90A5 /* betterroam.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = betterroam.js; sourceTree = "<group>"; };
-		11799EE72406102F009049FD /* RoamMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoamMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11799EE72406102F009049FD /* Roam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11799EEA2406102F009049FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11799EEC2406102F009049FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11799EEE2406102F009049FD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -53,12 +53,14 @@
 				11799EE82406102F009049FD /* Products */,
 				11799EFE24063DEA009049FD /* README.md */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		11799EE82406102F009049FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11799EE72406102F009049FD /* RoamMobile.app */,
+				11799EE72406102F009049FD /* Roam.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,7 +108,7 @@
 			);
 			name = RoamMobile;
 			productName = RoamMobile;
-			productReference = 11799EE72406102F009049FD /* RoamMobile.app */;
+			productReference = 11799EE72406102F009049FD /* Roam.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +119,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "Daniel Aditya Istyana";
+				ORGANIZATIONNAME = "Jonathan Simcoe";
 				TargetAttributes = {
 					11799EE62406102F009049FD = {
 						CreatedOnToolsVersion = 11.3;
@@ -125,7 +127,7 @@
 				};
 			};
 			buildConfigurationList = 11799EE22406102F009049FD /* Build configuration list for PBXProject "RoamMobile" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -312,14 +314,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 9H8AZ8D28D;
+				DEVELOPMENT_TEAM = LGR8EYD5HN;
 				INFOPLIST_FILE = RoamMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.adityadaniel.RoamResearchMobile;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jdsimcoe.RoamMobile;
+				PRODUCT_NAME = Roam;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,14 +333,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 9H8AZ8D28D;
+				DEVELOPMENT_TEAM = LGR8EYD5HN;
 				INFOPLIST_FILE = RoamMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.adityadaniel.RoamResearchMobile;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jdsimcoe.RoamMobile;
+				PRODUCT_NAME = Roam;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
